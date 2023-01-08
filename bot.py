@@ -79,13 +79,13 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument('--gists', type=str, required=True)
 parser.add_argument('--user', type=str, required=True)
-parser.add_argument('--password', type=str, required=True)
+parser.add_argument('--token', type=str, required=True)
 parser.add_argument('--file', type=str)
 parser.add_argument('--interval', type=str)
 
 args = parser.parse_args()
 
-GISTS, USER, PASS = args.gists, args.user, args.password
+GISTS, USER, PASS = args.gists, args.user, args.token
 
 if args.file is not None:
     FILE = args.file
